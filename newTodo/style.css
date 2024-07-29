@@ -1,0 +1,152 @@
+body{
+    background-color: #e5eaf5;
+}
+
+/* общий контейнер */
+.container{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    border: 1px #8458B3 solid ;
+}
+
+/* Заголовок общего контейнера */
+.titleText{
+    font-size: 2rem;
+    color: #8458B3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.line{
+    width: 300px;
+    height: 1px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* поле ввода новой задачи */
+.message{
+    width: 286px;
+    height: 30px;
+    margin-top: 20px;
+    border:0px;
+    border-radius: 3px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: 2px #8458B3 dashed;
+    padding: 0 10px;
+}
+.message:focus{
+    outline: 2px #8458B3 solid;
+
+}
+.inputWritting{
+    background-color: red;
+}
+/* кнопка добавить новую задачу */
+.add{
+    width: 308px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #8458B3;
+    border:0px;
+    border-radius: 3px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.add:hover{
+    transform: scale(1.03);
+}
+.add:active{
+    transform: scale(0.97);
+}
+
+/*контейнер списка*/
+.todoList{
+    width: 300px;
+    text-align: left;
+    margin-left:50px;
+    font-size: 1.2rem;
+}
+
+/* нумерованный список */
+.todo{
+    padding: 0;
+    list-style-position: inside;
+    color: #8458B3;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+
+/* элементы списка */
+li{
+    word-break: break-word;
+    margin-top: 5px;
+    border-bottom: 1px #8458B3 dashed;
+
+}
+
+/* кнопки выполнить и удалить дело */
+.btnCheck, .btnDelete{
+    width: 20px;
+    height: 20px;
+    padding: 2.5px 0;
+    cursor: pointer;
+    float: right;
+}
+.btnCheck{
+    accent-color: #8458B3;
+}
+
+.btnDelete{
+    background-color: #8458B3;
+    color: white;
+    border-width: 0px;
+    border-radius: 2px;
+    margin-top: 3px;
+    font-weight: 600;
+}
+/* стили выполненных дел */
+.checked{
+    animation-duration: 3s;
+    animation-name: slideout;
+    text-decoration: line-through;
+    background-color: #e1e1e1;
+}
+
+/* кнопка очистить дела */
+.clear, .checkAll{
+    width: 308px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #8458B3;
+    border:0px;
+    border-radius: 3px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    
+}
+.clear:hover, .checkAll:hover{
+    transform: scale(1.03);
+}
+.clear:active, .checkAll:active{
+    transform: scale(0.97);
+}

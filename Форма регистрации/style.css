@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,500;1,600&display=swap');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out; /* плавность переходов для всех элементотв страницы*/
+    
+}
+body {
+    height: 100vh;  
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* ==========================Голова=======================================*/
+.container{
+    width: 100%;
+    height: 60px;
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    outline: none;
+
+}
+header{
+    width: 100vw;
+    position: relative;
+}
+
+header a {
+    width: 100%;
+    text-decoration: none;
+    color: #8487F6;
+    font-family: "Montserrat", "Semibold";
+    font-size: 16px;
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dela Gothic One';
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.container{
+    width: 100vw;
+    height: 60px;
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .logo { 
+    display: block;
+    float: left;
+    margin-left: 1vw;
+    margin-top: 2.6%;
+}
+.container a.log {
+    font-family: "Dela Gothic One";
+    font-size: 40px;
+
+}
+
+.container .login_bt{
+    display: block;
+    border: 2px solid #8487F6;
+    border-radius: 55px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    margin-top: 28px;
+}
+
+
+.container .login_bt:hover{
+    background-color: #8487F6;
+    color: white;
+    scale: 1.1;
+}
+
+.container .login_bt:active{
+    background-color: #8487F6;
+    color: white;
+    scale: 0.9;
+}
+.container .logon_bt{
+    display: block;
+    border: 2px solid #8487F6;
+    border-radius: 55px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    margin-top: 28px;
+}
+.container .logon_bt:hover{
+    background-color: #8487F6;
+    color: white;
+    scale: 1.1;
+}
+
+.container .logon_bt:active{
+    background-color: #8487F6;
+    color: white;
+    scale: 0.9;
+}
+.container ul.log{
+    display: flex;
+    gap: 1rem;
+    margin: 3rem
+}
+/*-----------------------------------Тело------------------*/
+/*Заголовок формы*/
+.form-title {  
+    text-align: center;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    display: block;
+    position: relative;
+    margin-top: 10vh;
+    color: #8487F6;
+    font-family: 'Dela Gothic One';
+    font-weight: 600;
+    font-size: 2rem;
+
+    animation-name: fadetitle;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadetitle {
+    0%{opacity: 0;}
+    25%{opacity: .25;}
+    50%{opacity: .5;}
+    75%{opacity: .75;}
+    100%{opacity: 1;}
+} /* анимация при переходе на страницу*/
+
+/*-----Весь контейнер формы--------*/
+.form-container{
+    flex-wrap: wrap; 
+    justify-content: center;
+    display: block;
+    position: relative;
+    top: 5vh;
+    margin:0 auto;
+
+
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    border-radius: 55px;
+    box-shadow: 0px 0px 25px 1px #B2B2B2 ;
+
+    animation-name: "fadeform";
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeform {
+    0%{opacity: 0;}
+    25%{opacity: .25;}
+    50%{opacity: .5;}
+    75%{opacity: .75;}
+    100%{opacity: 1;}
+} /* анимация при переходе на страницу*/
+
+.form-field{
+    margin-bottom: 10px;
+} /*область полей и кнопок формы*/
+
+input{
+    height:45px;
+    width: 280px; 
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ECECEC;
+    padding-left: 30px;
+    font-family:'Montserrat';
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+}
+
+input:focus{
+    outline: 2px solid #8487F6;
+    transition: all 5ms ease-in-out;
+} /*эффект при нажатии на поле*/
+  
+/*кнопки назад и вперед -->*/
+.button-back{
+    margin-top: 20px;
+    height: 40px;
+    width: 90px;
+    text-align:center;
+    color:#8487F6;
+    background-color:white;
+    border: 2px solid #8487F6;
+    border-radius: 55px;
+    font-size: 14px;
+    font-family:'Montserrat';
+    font-weight: 500;
+} 
+.button-back:hover{
+    scale: 1.1;}
+.button-back:active{
+    scale: 0.9;}
+
+.button-next {
+    margin-left: 10px;
+    height: 40px;
+    width: 140px;
+    text-align:center;
+    color:white;
+    background-color:#8487F6;
+    border: 2px solid #8487F6;
+    border-radius: 55px;
+    font-size: 14px;
+    font-family:'Montserrat';
+    font-weight: 500;
+}
+.button-next:hover{
+    scale: 1.1;}
+.button-next:active{
+    scale: 0.9;}
+
+    /*  ------- поля со списком---*/
+select {
+    height:45px;
+    width:280px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ECECEC;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-family:'Montserrat';
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer; 
+    
+}
+select option{
+    background-color: white;
+}
+
+select::-ms-expand{
+    display:none;
+}
+
+select:focus{
+    outline: 2px solid #8487F6;
+    transition: all 5ms ease-in-out;
+}
+
+.select-wrapper{
+    position: relative;
+}
+
+/*стрелочка справа в поле со списком*/
+.select-wrapper::before{
+    content:""; 
+    position: absolute;
+    top: 50%;
+    right:15px; 
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7.5px 0 7.5px;
+    border-color: #B2B2B2 transparent transparent transparent;
+    pointer-events: none;
+}
+.INN{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+

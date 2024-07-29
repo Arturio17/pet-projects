@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,500;1,600&display=swap');
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out; /* плавность переходов для всех элементотв страницы*/
+    
+}
+body {
+    
+    height: 100vh;  
+    width: 100vw;
+    max-height: 1080px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+
+}
+/* ==========================Голова=======================================*/
+.container{
+    background-color: #343434;
+    max-width: 343px;
+    height: 200vh;
+
+    display: flex;
+    position: relative;
+    align-items: left;
+    justify-content: flex-start;
+
+}
+
+.menu{
+    margin-top: 10.6rem;/**/
+    margin-left: 3.75rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    align-items: left;
+}
+
+li{
+    text-decoration: none;
+    outline: none;
+    margin-top:2.75rem;
+    height: 1.5rem;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+header a {
+    width: 100%;
+    text-decoration: none;
+    color: #b2b2b2;
+    font-family: "Montserrat", "Semibold";
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+img{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    margin-right: 1.25em;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dela Gothic One';
+    font-weight: normal;
+    letter-spacing: 1px;
+}*/
+.container .logo { 
+    display: flex;
+    float: left;
+    margin-left: 3.75rem;
+    margin-top: 1.31rem;
+}
+.container a.log {
+    font-family: "Dela Gothic One";
+    color:white;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container li:hover{
+    scale: 1.02;
+    color: white;
+    font-family: "Montserrat", "Black";
+}
+.container li:active{
+    scale: 0.97;
+    color: white;
+    font-family: "Montserrat", "Black";
+}
+/*временно*/
+.container .spisok:hover{
+    color:white;
+}/**/
+.container .spisok{
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.container .spisok1{
+    color:white;
+}
+
+/*----------------------------------------------------*/
+.dates{
+    position: absolute;
+    margin-left: 25.19rem;
+    margin-top: 6.73rem;
+}
+
+.blocks{
+    margin-left: 25.19rem;
+    margin-top: 12.7rem;
+
+}
+.kab{
+    color: #8487F6;
+    font-family: "Dela Gothic One";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.FIO{
+    vertical-align: top;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: left;
+    position: relative;
+}
+.your_dates{
+    color: #343434;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.password{
+    vertical-align: top;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: left;
+    position: relative;
+    max-width: 400px;
+}
+.parol{
+    color: #343434;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+
+}
+
+.company{
+    vertical-align: top;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: left;
+    position: relative;
+}
+
+.about_company{
+    color: #343434;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+
+}
+.money{
+    vertical-align: top;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: left;
+    position: relative;
+}
+
+input{
+    height:45px;
+    width: 400px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ECECEC;
+    padding-left: 30px;
+    font-family:'Montserrat','Medium';
+    font-weight: 100;
+    font-size: 1rem;
+    color: black;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+    display:block;
+}
+input:focus{
+    outline: 2px solid #8487F6;
+    transition: all 5ms ease-in-out;
+} /*эффект при нажатии на поле*/
+/*кнопка сохранить -->*/
+.button-back{
+    margin-top: 0.87rem;
+    margin-bottom: 80px;
+    height: 44px;
+    max-width: 137px;
+    text-align:center;
+    color:white;
+    background-color:white;
+    border: 2px solid #8487F6;
+    border-radius: 55px;
+    font-size: 14px;
+    font-family:'Montserrat';
+    font-weight: 500;
+    display: inline-flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    font-size:1rem;
+
+    border-radius: 3.4375rem;
+    border: 2px solid #8487F6;
+    background: #8487F6;
+} 
+.button-back:hover{
+    scale: 1.1;}
+.button-back:active{
+    scale: 0.9;}
+
+select {
+    height:45px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ECECEC;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-family:'Montserrat';
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 0.7rem;
+    display: block;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+}
+select option{
+    background-color: white;
+}
+
+select::-ms-expand{
+    display:none;
+}
+
+select:focus{
+    outline: 2px solid #8487F6;
+    transition: all 5ms ease-in-out;
+}
+
+
+.select-wrapper{
+    position: relative;
+}
+
+/*стрелочка справа в поле со списком*/
+.select-wrapper::before{
+    content:""; /*---------------*/
+    position: absolute;
+    top: 50%;
+    right:15px; 
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7.5px 0 7.5px;
+    border-color: #B2B2B2 transparent transparent transparent;
+    pointer-events: none;
+}
+/*убираем скролл*/
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+.plateg{
+    color: #343434;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+}

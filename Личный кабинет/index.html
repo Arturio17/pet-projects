@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YOSIK - Личный кабинет</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <nav class="container">
+                <div class="logo"><a class = "log" href="index.html">YOSIK</a></div> 
+                <ul class="menu">
+                    <a href=""><li><img src="./img/Личный кабинет!!!.svg"><a class="spisok1" >личный кабинет</a></li></a>
+                    <a href=""><li><img src="./img/товары_цены.svg"><a class="spisok" >товары и цены</a></li></a>
+                    <a href=""><li><img src="./img/финансы.svg"><a class="spisok">финансы</a></li></a>
+                    <a href=""><li><img src="./img/аналитика.svg"><a class="spisok" href="">аналитика</a></li></a>
+                    <a href=""><li><img src="./img/рейтинги.svg"><a class="spisok" href="">рейтинги</a></li></a>
+                    <a href=""><li><img src="./img/Отзывы.svg"><a class="spisok" href="">отзывы</a></li></a>
+                    </ul>
+            </nav>
+        </header>
+
+        <div class="dates">
+            <h1 class="kab">личный кабинет</h1>
+        </div>
+        <div class="blocks">
+            <!-- ФИО -->
+            <div class="FIO">
+                <div class="your_dates">ваши данные</div>
+                <form action="" method="" class="form_dates">
+                    <input type="text" placeholder="фамилия" maxlength="255" name="F" disabled>
+                    <input type="text" placeholder="имя" maxlength="255" name="I" disabled>
+                    <input type="text" placeholder="отчество" maxlength="255" name="O" disabled>
+                    
+                    <button class="button-back" href="#">изменить</button>
+                    </form>
+            </div>    
+
+            <!-- Пароль -->
+            <div class="password">
+                <div class="parol">пароль</div>
+                <form action="" method="" class="form_password">
+                    <input type="password" placeholder="введите старый пароль" maxlength="255" name="old" >
+                    <input type="password" placeholder="введите новый пароль" maxlength="255" name="new" >
+                    <button class="button-back" href="">изменить</button>
+                </form>
+            </div>
+
+            <!-- Информация о компании -->
+            <div class="company">
+                <div class="about_company">информация о компании</div>
+                <form action="" method="" class="form_company">
+                    <select name="firmtype" class="select2" disabled required>
+                        <option value="" disable selected hidden>тип организации</option><option value="1">организация</option><option value="2">ИП</option> <option value="3">самозанятый</option>
+                    </select>
+                    <input type="text" placeholder="юридическое название" maxlength="255" name="namec" disabled>
+                    <select name="country" class="select1" disabled required>
+                        <option value="" disable selected hidden>страна регистрации</option><option value="rus">Российская Федерация</option><option value="arm">Армения</option> <option value="bel">Беларусь</option> <option value="gruz">Грузия</option> <option value="kazah">Казахстан</option> <option value="kirg">Киргизия</option> <option value="kstan">Кыргызстан</option> <option value="lat">Латвия</option> <option value="lit">Литва</option> <option value="mold">Молдавия</option> <option value="ukr">Украина</option> <option value="aston">Эстония</option>
+                    </select>
+                    <select name="KT" class="select3" disabled required>
+                        <option value="" disable selected hidden>категория товаров</option><option value="1">Автотовары</option><option value="2">Аптека</option> <option value="3">Бытовая техника</option> <option value="4">Дача и сад</option> <option value="5">Детские товары</option> <option value="6">Досуг и развлечение</option> <option value="7">Книги</option> <option value="8">Компьютерная техника</option> <option value="9">Мебель</option><option value="10">Оборудование</option><option value="11">Одежда, обувь и аксессуары</option><option value="12">Продукты</option><option value="13">Спорт и отдых</option><option value="14">Строительство и ремонт</option><option value="15">Товары для дома</option><option value="16">Товары для животных</option><option value="17">Товары для красоты</option><option value="18">Цветы</option><option value="19">Электроника</option><option value="20">Другое</option>
+                    </select>
+                    <button class="button-back" href="">изменить</button>
+                </form>
+            </div>
+
+            <!-- платежные реквезиты -->
+            <div class="money">
+                <div class="plateg">платежные реквизиты</div>
+
+                <form action="" method="" class="form_money">
+                    <input type="text" placeholder="расчетный счет" maxlength="20" minlength="20" name="RS" disabled>
+                    <input type="text" placeholder="БИК банка" maxlength="9" minlength="9" name="BIK" disabled>
+                    <button class="button-back" href="">изменить</button>
+                </form>
+            </div>
+        </div>
+
+    </body> 
+</html>

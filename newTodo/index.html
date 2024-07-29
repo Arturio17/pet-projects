@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!-- шрифт poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- шрифт Noto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 class="titleText">TodoList</h1>
+
+        <div class="line"></div>
+
+        <input class="message" type="text" placeholder="Введите новую задачу">
+        <button class="add" type="submit">Добавить</button>
+
+        <div class="todoList">
+            <ol class="todo">
+                <li>Тут будут ваши задачи<button class="btnDelete" type="submit">X</button><input class="btnCheck" type="checkbox"></li>
+        </div>
+
+        <div>
+            <button class="clear" type="submit">Очистить</button>
+        </div>
+
+        <div>
+            <button class="checkAll" type="submit">Выполнить всё</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+

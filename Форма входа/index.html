@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YOSIK - вход</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="icon" href="./favicon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <nav class="container">
+               <div class="logo"><a class = "log" href="index.html">YOSIK</a></div> 
+               <ul class="log">
+                <li><a href="login.html" class="login_bt">регистрация</a></li>
+
+               </ul> 
+            </nav>
+        </header>
+                <h1><b class="form-title">Вход в личный кабинет продавца</b></h1>
+                <div class="form-container">
+                    <form method="post">
+
+                    <div class="form-field">
+
+                        <div class="form-field">
+                            <input type="tel" placeholder="номер телефона" name="telephon" required>
+                        </div>
+
+                    </div>
+
+                        <div class="form-field">
+                            <input type="password" id="password-input" placeholder="пароль" minlength="8" name="password" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+            
+                    <div class="form-buttons">
+                        <button class="button-back" href="index.html">назад</button>
+                        <button class="button-next" href="">продолжить</button>
+                    </div>
+                    </div>
+                    </form>
+
+                </div>
+
+    </body>
+</html>
