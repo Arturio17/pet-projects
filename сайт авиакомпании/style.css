@@ -1,0 +1,76 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 70px;
+}
+.body-top{
+    width: 80%;
+    border: none;
+    margin: auto;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+#logo{
+    max-width: 180px;
+    max-height: 140px;
+}
+header,footer{
+    padding: 1em;
+    color: white;
+    background-color: rgb(0,173,212);
+    clear: left;
+    text-align: center;
+    font-weight: 600;
+    
+
+}
+nav{
+    height: 40px;
+    border: solid white;
+    padding: 1em;
+    text-align: center;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+.nav-item a:hover{
+    text-decoration:underline;
+    color: white;
+}
+#main{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+.list-group, .description{
+    font-weight: 500;
+}
+.list-group{
+    width: 60%;
+    margin: auto;
+}
+.card img{
+    height: 250px;
+}
+
+#name{
+    color: rgb(255, 153, 0);
+    text-align: center;
+}
+select{
+    width: 170px;
+}
+input[type='submit']{
+    background-color: white;
+    color: rgb(255, 153, 0);
+    border: 1px solid rgb(255, 153, 0);
+}
+
