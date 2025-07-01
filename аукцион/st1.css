@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('Comfortaa-Regular.woff2') format('woff2') url('Comfortaa-Regular.woff') format('woff');
+	font-weight: 1;
+	font-style: normal;
+}
+
+body{
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #FFFFE0;
+}
+
+.wrapper{
+    width: 300px;
+    height: 300px;
+    background-color: #7A998B;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: inset 0 0 50px 5px #F0DDA3;
+
+}
+
+.wrapperEnd{
+    width: 300px;
+    height: 300px;
+    background-color: #C25C66;
+    border-radius: 50%;
+    position: absolute;
+    left: 70%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: inset 0 0 50px 5px #E2CBBA;
+
+}
+
+.start{
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,10%);
+    border-radius: 15px;
+    border-color: #99CEE0;
+    background-color: #F0DDA3;
+    color: #7A998B;
+}
+
+.start:hover, .end:hover {
+    scale: 1.05;
+    transition: 0.5s; 
+}
+
+.end{
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    border-color:#e76f51;
+    color: #C25C66;
+    background-color: #F6C7CF;
+}
+
+.container{
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    left: 0; right:0;
+}
+
+.tit{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.result, .itog{
+    font-weight: 600;
+    font-size: 32px; 
+}
+
+.link{
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-110%);
+    border-radius: 15px;
+    border-color: #219ebc; 
+}

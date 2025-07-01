@@ -1,0 +1,751 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FFDC9C;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+img{
+    pointer-events: none
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+header{
+    background-color: white;
+    min-width: 100vw;
+
+}
+.header__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 9.375rem;
+}
+.header__info-nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    list-style-type:none;
+    min-width: 12rem;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 15rem;
+}
+.contacts a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contacts button{
+    text-align: center;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+    border: 0;
+    --c: #FFDC9C;
+    background-color: var(--c);
+    box-shadow: 0px 4px 10px var(--c), 0px -4px 10px var(--c), inset 0px -4px 8px var(--c), inset 0px 4px 8px var(--c);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ТЕЛО ТЕЛО ТЕЛО ТЕЛО ТЕЛО */
+
+.intro-largeScreen{
+    background-color: white;
+    min-width: 100rem;
+    height: 43.75rem;
+    margin: 5vh 9.375rem;
+    border-radius: 50px;
+
+}
+.intro-largeScreen_text{
+    position: absolute;
+    margin: 5rem 0 0 8.5rem;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.intro-largeScreen_text22{
+    margin-top: 20%;
+    font-size: clamp(1.5rem, 2.3rem, 2.8rem);
+    font-weight: 400;
+    border-bottom: 10px green dotted;
+    width: 75%;
+}
+.intro-largeScreen img{
+    position: relative;
+    float: right;
+}
+
+.menu{
+    margin-top: 8vh;
+    padding-top: 2vh;
+
+}
+.menu_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9.375rem;
+}
+.buttons{
+    width: auto;
+}
+.menu_title button{
+    background-color: white;
+    margin: 0 1rem 1rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.menu_title button{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: white;
+}
+.menu_title button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+.menu_title button:hover {
+    background-color: #FFDC9C;
+}
+
+.color_btn{
+    background-color: #FFDC9C; 
+}
+.line{
+    min-width: 60rem;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    margin: 0 9.375rem 1rem;
+}
+
+.menu_container{
+    text-align: center;
+    padding: 0 9.375rem;
+}
+
+.menu_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.menu_item{
+    text-align: center;
+    list-style-type: none;
+    width: 18rem;
+    height: 27rem;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 0 0 7px 1px #292929;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.menu_item img{
+    width: 18rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.item_titleRus, .item_mass, .item_price{
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.item_titleRus{
+    height: 5rem;
+    padding-top: 1rem;
+    margin: 0 1rem;
+}
+
+.item_mass{
+    font-weight: 400;
+}
+
+.about{
+    margin: 0 9.375rem;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.about_textcontent{
+    /* min-width: 60rem; */
+    display: block;
+}
+.about_us{
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.about_text{  
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+
+}
+
+.number{
+    margin: auto;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 10rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #FFA500;
+
+    box-shadow: 0 0 5px 0px #292929;
+}
+.message{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    /* transform: translateX(-20%); */
+}
+
+.adressTaxi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adress_menu{
+    background-color: white;
+    width: 52rem;
+    /* height: 53.125rem; */
+    height: auto;
+    margin-top: 10vh;
+    padding: 5vh 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px 0px #292929;
+}
+
+.adress, .taxi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 3rem;
+}
+.adress{
+    margin-top:0;
+}
+
+.adress_text, .taxi_text{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: right;
+
+}
+
+.img_map{
+    display: flex;
+    width: 15.4rem;
+    height: 13rem;
+}
+.img_taxi{
+    display: flex;
+    width: 15.4rem;
+    height: 13rem;
+}
+
+.taxi_text{
+    text-align: left;
+}
+.mainAction{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: 5vh;
+    color: #FFA500;
+    
+}
+/* FOOTER */
+footer{
+    margin-top: 10.75rem;
+}
+.footer_up{
+    background-color: black;
+    opacity: 66%;
+    /* width: 100%; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #FFA500;
+    height: 4rem;
+}
+.footer_info{
+    height: auto;
+    background-color: white;
+
+}
+.footer_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9.375rem;
+}
+.footer_main12{
+    display: flex;
+
+}
+.footer_main img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.footer_nav{
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+}
+.footer_nav li{
+    margin-bottom: 1rem;
+}
+
+.footer_line{
+    width: 100vw;
+    height: 0.125rem;
+    background-color: black;
+}
+.footer_bottom{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 9.375rem;
+    align-items: center;
+}
+.footer_address{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.footer_contacts{
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* > 1900 */
+@media(min-width: 1900px){
+    .intro-largeScreen_text{
+        font-size: clamp(4rem, 4.8rem, 6rem)
+    }
+    .intro-largeScreen_text21{
+        display: none;
+    }
+
+}
+/* 1280 - 1900 */
+@media(max-width: 1899px) and (min-width:1280px){
+
+    .intro-largeScreen_text22{
+        display:none;
+    }
+    .intro-largeScreen{
+        height: 80vh;
+        max-width: 100rem;
+        min-width: 60rem;
+        position: relative;
+    }
+    .intro-largeScreen_text{
+        font-size: clamp(3rem, 3.5rem,4rem);
+    }
+    .intro-largeScreen_text21{
+        margin-top: 10%;
+        font-size: clamp(1.5rem, 2.3rem, 2.8rem);
+        font-weight: 400;
+        border-bottom: 10px green dotted;
+        width: 75%;
+    }
+    .intro-largeScreen img{
+        width: 39%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+    }
+}
+@media(max-width: 1279px) and (min-width: 960px){
+
+    .intro-largeScreen_text21{
+        display:none;
+    }
+    .line{
+        max-width: 80rem;
+        min-width: 40rem;
+    }
+    .inst, .vk{
+        width: 20px;
+        height: 20px;
+    }
+    .contacts{
+        min-width: 13rem;
+    }
+    .intro-largeScreen{
+        height: 70vh;
+        max-width: 80rem;
+        min-width: 40rem;
+        position: relative;
+        margin: 5vh 5rem;
+    }
+    .intro-largeScreen_text{
+        font-size: clamp(1.6rem, 2.4rem,2.6rem);
+    }
+    .intro-largeScreen_text22{
+        margin-top: 10%;
+        font-size: clamp(1.2rem, 1.8rem, 2rem);
+        font-weight: 400;
+        border-bottom: 7px green dotted;
+        width: 75%;
+    }
+    .intro-largeScreen img{
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .header__info{
+        padding: 0 5rem;
+    }
+    header li{
+        min-width: 6rem;
+        font-size: 1rem;
+    }
+
+    .line{
+        /* max-width: 60rem; */
+        height: 3px;
+        background-color: black;
+        position: relative;
+        margin: 0 5rem 1rem;
+    }
+    .menu_container{
+        padding: 0 5rem;
+    } 
+    .menu_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu_title{
+        padding: 0 5rem;
+    }
+    .footer_up{
+        font-size: 1.7rem;
+        height: 3.5rem;
+    }
+    .footer_main{
+        padding: 0 5rem;
+    }
+    .footer_main img{
+        width: 15rem;
+        height: 15rem;
+    }  
+    .footer_nav{
+        font-size: 1.6rem;
+    }    
+    .footer_bottom{
+        padding: 0 5rem;
+    }
+    .footer_address{
+        font-size: 1.2rem;
+    }
+    .footer_contacts{
+        width: 3.5rem;
+    }
+}
+
+@media(max-width: 959px) and (min-width:700px){
+    .screen{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-image: url(./img/screen1.jpg);
+        background-size: cover;
+
+    }
+    .screen2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-color: black;
+        opacity: 60%;
+    }
+    .intro-largeScreen_text21{
+        display:none;
+    }
+    .header_logo{
+        width: 50px;
+        height: 50px;
+    }
+    .line{
+        max-width: 80rem;
+        min-width: 18rem;
+    }
+    .inst, .vk{
+        width: 17px;
+        height: 17px;
+    }
+    .contacts{
+        min-width: 10rem;
+    }
+    header .contacts button{
+        width: 7rem;
+        height: 1.8rem;
+        font-size: 0.7rem;
+    }
+    .intro-largeScreen{
+        height: 40vh;
+        max-width: 80rem;
+        min-width: 18rem;
+        position: relative;
+        margin: 5vh 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .intro-largeScreen_text{
+        font-size: 2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 100%;
+        color: white;
+    }
+    .intro-largeScreen_text22{
+        width: 100%;
+        margin-top: 10%;
+        font-size: 1.7rem;
+        font-weight: 400;
+        border-bottom: 0px green dotted;
+    }
+
+    .intro-largeScreen img{
+        display: none;
+    }
+    .header__info{
+        padding: 0 4rem;
+    }
+    header li{
+        min-width: 6rem;
+        font-size: 1rem;
+    }
+    .line{
+        /* max-width: 60rem; */
+        height: 3px;
+        background-color: black;
+        position: relative;
+        margin: 0 5rem 1rem;
+    }
+    .menu_container{
+        padding: 0 5rem;
+    } 
+    .menu_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu_item{
+        width: 14rem;
+        height: 21rem;
+    }
+    
+    .menu_item img{
+        width: 14rem;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .item_titleRus, .item_mass, .item_price{
+        font-size: 1rem;    
+    }
+    .item_titleRus{
+        height: 3rem;
+        padding-top: 0.5rem;
+        margin: 0 0.5rem;
+    }
+    .menu_title{
+        padding: 0 5rem;
+    }
+    .menu_title button{
+        background-color: white;
+        margin: 0 0.5rem 1rem;
+        width: 7rem;
+        height: 2.8rem;
+        font-size: 0.9rem;
+    }
+    .about{
+        margin: 0 4rem;
+        margin-top: 10vh;
+        padding-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+    
+    .about_textcontent{
+        display: block;
+    }
+    .about_us{
+        font-size: 3.5rem;
+    }
+    .about_text{  
+        font-size: 1.8rem;
+
+    }
+    .number{
+        width: 5.7rem;
+        height: 5.7rem;
+        font-size: 2rem;    
+    }
+    .message{
+        font-size: 1.3rem;
+    } 
+    .adress_menu{
+        background-color: white;
+        width: 40rem;
+    } 
+    .adress, .taxi{
+        width: 80%;
+        margin-top: 3rem;
+    }    
+    .adress_text, .taxi_text{
+        font-size: 1.5rem;   
+    }
+    .img_map{
+        width: 11.8rem;
+        height: 10rem;
+    }
+    .img_taxi{
+        width: 11.8rem;
+        height: 10rem;
+    }
+    
+    .taxi_text{
+        text-align: left;
+    }
+    .mainAction{
+        font-size: 1.8rem;
+    }
+
+    .footer_up{
+        font-size: 1.44rem;
+        height: 3rem;
+    }
+    .footer_main{
+        padding: 0 4rem;
+    }
+    .footer_main img{
+        width: 10rem;
+        height: 10rem;
+    }  
+    .footer_nav{
+        font-size: 1.2rem;
+    }    
+    .footer_bottom{
+        padding: 0 4rem;
+        height: 5vh;
+    }
+    .footer_line{
+    height: 0.05rem;
+    }
+    .footer_address{
+        font-size: 0.9rem;
+    }
+    .footer_contacts{
+        width: 2.5rem;
+    }
+}

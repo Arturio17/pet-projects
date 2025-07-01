@@ -1,0 +1,174 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>Осетинские пироги</title>
+    <!-- Шрифт Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__info">
+            <a href=""><img class="header_logo" src="./img/logo.png" alt="" width="75" height="75"></a>
+
+        <div class="header__info-nav">
+            <ul>
+                <li><a href="#menu">МЕНЮ</a></li>
+                <li><a href="#about">О НАС</a></li>
+                <li><a href="#adress">ДОСТАВКА</a></li>
+            </ul>
+        </div>
+
+            <div class="contacts">
+                <a href="" target="_blank"><img class="inst" src="./img/instagram.svg" alt="" width="25" height="25"></a>
+                <a href="" target="_blank"><img class="vk" src="./img/vk.svg" alt="" width="25" height="25"></a>
+                <button>+7 (999) 999-99-99</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <div class="intro-largeScreen">
+                <div class="screen"></div>
+                <div class="screen2"></div>
+                <div class="intro-largeScreen_text">Осетинские пироги,<br/>торты и выпечка<br/>
+                    с доставкой в<br/>Воронеже
+                    
+                    <div class="intro-largeScreen_text21">
+                        Только<br/>натуральные продукты
+                    </div>
+
+                    <div class="intro-largeScreen_text22">
+                        Только натуральные продукты
+                    </div>
+                </div>
+                <img src="./img/intro_img.png" alt="">
+            </div>
+
+        <div class="menu" id="menu">
+            <div class="menu_title">
+                <div class="buttons">
+                    <button class="pie" id="menu_btn">ПИРОГИ</button>
+                    <button class="cake" id="menu_btn">ДЕСЕРТЫ</button>
+                    <button class="other" id="menu_btn">ДОП.МЕНЮ</button>
+                    <button class="action" id="menu_btn">АКЦИИ</button>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="menu_container">
+                <ul class="menu_list">
+                </ul>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+
+            <div class="about_textcontent">
+                <div class="about_us">О нас</div>
+                <div class="about_text">Мы изготавливаем пироги вот уже на протяжении многих лет. За это время добились мастерства в этом деле. Используем только натуральные продукты! </div>
+                
+                <div class="advantages">
+                    <div class="advantage">
+                        <div class="number">15</div>
+                        <div class="message">опыт работы</div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="number">1500</div>
+                        <div class="message">клиентов</div>
+                    </div>
+
+                    <!-- <div class="advantage">
+                        <div class="number">15</div>
+                        <div class="message">опыт работы</div>
+                    </div> -->
+
+                    <div class="advantage">
+                        <div class="number">750</div>
+                        <div class="message">средняя цена<br /> пирога</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="adressTaxi" id="adress">
+            <div class="adress_menu" >
+
+                <div class="adress">
+                    <div class="adress_text">
+                        Адрес:<br/>
+                        Воронеж,<br/>
+                        улица Доктора<br/>
+                        Борисова, дом 11
+                    </div>
+                    <div class="img_map">
+                        <img src="./img/map.png" alt="">
+                    </div>
+                </div>
+
+                <div class="taxi">
+                    <div class="img_taxi">
+                        <img src="./img/taxi.png" alt="">
+                    </div>
+                    <div class="taxi_text">
+                        Доставка:<br/>
+                        Проходит через<br/>
+                        такси-сервисы<br/>
+                        по их тарифу
+                    </div>
+                </div>
+                <div class="mainAction">Доставка от 7 пирогов бесплатно!</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer_up">
+            Оформляйте заказ по номеру телефона +7 (999) 999-99-99
+        </div>
+
+        <div class="footer_info">
+            <div class="footer_main">
+                <div class="footer_main12">
+                    <img src="./img/logo.png" alt="">
+                    <ul class="footer_nav">
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#adress">Доставка</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer_line"></div>
+
+            <div class="footer_bottom">
+                <div class="footer_address">Воронеж, улица Доктора Борисова, дом 11</div>
+                <div class="footer_contacts">
+                    <a href=""><img class="inst" src="./img/instagram.svg" alt="" width="25" height="25"></a>
+                    <a href=""><img class="vk" src="./img/vk.svg" alt="" width="25" height="25"></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src='./script.js'></script>
+</body>
+</html>
