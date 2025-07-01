@@ -1,0 +1,220 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #28288d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+header nav div a:hover{
+    text-decoration: underline;
+}
+
+
+/*units*/
+main > *{
+    margin: 20px 0;
+}
+#unit_name{
+    font-size: 28px;
+}
+.container{
+    width: 100%;
+}
+.forma{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.forma > *{
+    padding: 10px;
+    margin: 10px;   
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.forma > * > *{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.mest{
+    width: 120px;
+    text-align: center;
+}
+.tobe1, .tobe2, .tobe3{
+    width: 110px;
+    margin: 0 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: antiquewhite;
+    border-radius: 1px;
+    font-size: 20px;
+}
+.verb1, .verb2, .verb3{
+    width: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: antiquewhite;
+    border-radius: 1px;
+    font-size: 20px;
+}
+.forma_question_button, .forma_affirmative_button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.forma > * button{
+    background-color:#28288d;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border:  none;
+    align-items: center;    
+}
+.forma > * button:hover{
+    scale: 1.05;
+}
+.forma > * button:active{
+    scale: 0.95;
+}
+
+.check_false{
+    background-color:salmon;
+}
+.check_false::placeholder{
+    color: white;
+    opacity: 87%;
+}
+.check_true{
+    background-color: mediumseagreen;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper > *{
+    width: 150px;
+    background-color:cornflowerblue;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.number_div{
+    position: relative;
+}
+.number{
+    background-color: beige;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+.word{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.input_word_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.input_word{
+    width: 80%;
+    border: 0px;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+::placeholder {
+    text-align: center;
+}
+.word_checking{
+    width: 20%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    background-color: #28288d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 0px;
+}
+button:hover{
+    cursor: pointer;
+}
+.word_checking:hover{
+    scale: 1.05;
+}
+.word_checking:active{
+    scale: 0.95;
+}
+.word_check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(223, 192, 113);
+    position: relative;
+}
+.word_check_button{
+    background-color:rgb(223, 192, 113);
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 20px;  
+}
+.word_check_button:hover{
+    outline: 2px black solid;
+    font-size: 22px;
+}
+.word_check_button:active{
+    scale: 0.95;
+    outline: none
+}
